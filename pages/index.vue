@@ -20,17 +20,15 @@
 export default {
   data() {
     return {
-      banners: [
-        {
-          url:
-            "http://img0.imgtn.bdimg.com/it/u=255540472,3722890280&fm=26&gp=0.jpg"
-        },
-        {
-          url:
-            "http://attach.bbs.miui.com/forum/201407/12/191515sskuppax42aarano.jpg"
-        }
-      ]
+      banners: []
     };
+  },
+  mounted() {
+    this.$axios({
+      url: "/scenics/banners"
+    }).then(res => {
+      console.log(res.data); //数据接口好像已经接收不到了
+    });
   }
 };
 </script>

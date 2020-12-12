@@ -1,9 +1,17 @@
 <template>
-  <div>首页</div>
+  <div>
+    <PageHeader />
+    首页
+  </div>
 </template>
 
 <script>
-export default {};
+import PageHeader from "@/components/PageHeader.vue";
+export default {
+  components: {
+    PageHeader
+  }
+};
 </script>
 
 <style></style>

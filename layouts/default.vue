@@ -2,9 +2,17 @@
   <div>
     <!-- 内容占位组件 -->
     <!-- 相当于app.vue -->
+    <PageHeader />
     <Nuxt />
   </div>
 </template>
+
+<script>
+import PageHeader from "@/components/PageHeader";
+export default {
+  components: { PageHeader }
+};
+</script>
 
 <style>
 html {
